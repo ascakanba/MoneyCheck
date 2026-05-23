@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body {
+  display: flex;
+  background: #0f172a;
+  color: white;
+}
+
+
+div button {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.adictran {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* adicionar transação */
+
+.overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0,0,0,0.5);
+
+  backdrop-filter: blur(4px);
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+.newtransaction {
+  background: #1e293b;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newtransaction input {
+  display: flex;
+  padding: 4px;
+  color: white;
+  background-color: #0f172a;
+  border: 1px solid #3a4c66;
+}
+.receita {
+  color: #22c55e;
+}
+.despesa {
+  color: #ef4444;
+}
+
+.newtransaction h3 {
+  text-align: center;
+}
+
+.deletetransaction {
+  background: #ef4444;
+  color: white;
+  border: none;
+  height: 100%;
+  border-radius: 8px;
+}
+/* acabou sobre adicionar transação */
+.perfil {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  width: 180px;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #111827;
+  padding: 20px;
+  border-right: 3px solid #3a4c66;
+}
+
+.sidebar h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.transaction {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

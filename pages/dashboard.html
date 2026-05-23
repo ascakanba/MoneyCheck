@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyCheck</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+  
+  <aside class="sidebar">
+    <h2>MoneyCheck</h2>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="transacoes.html">Transações</a>
+      <a href="metas.html">Metas</a>
+      <a href="configuracoes.html">Configurações</a>
+    </nav>
+    <div class="perfil">Perfil</div>
+  </aside>
+
+  <main class="content">
+
+    <h1 class="title">Dashboard</h1>
+<!-- quando clicar elas tem q abrir e tipo aqueles relatorios la , usar o toogle -->
+    <section class="cards">
+
+      <div class="card">
+        <h3>Saldo Atual</h3>
+        <p id="saldo">R$ 0,00</p>
+      </div>
+
+      <div class="card">
+        <h3>Entradas</h3>
+        <p id="receitas" style="color: #22c55e;">+ R$ 0,00</p>
+      </div>
+
+      <div class="card">
+        <h3>Saídas</h3>
+        <p id="despesas" style="color: #ef4444;">- R$ 0,00</p>
+      </div>
+
+    </section>
+
+  </main>
+<script  type="module" src="../script/dashboard.js"></script>
+</body>
+</html>

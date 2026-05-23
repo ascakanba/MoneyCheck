@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyCheck</title>
+  <link rel="stylesheet" href="../styles/transacoes.css">
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <!-- adicionar link para icons -->
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <h2>MoneyCheck
+    </h2>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="transacoes.html">Transações</a>
+      <a href="metas.html">Metas</a>
+      <a href="configuracoes.html">Configurações</a>
+    </nav>
+    <div class="perfil">Perfil</div>
+  </aside>
+
+  <main class="content">
+    <h1 class="title">Transações</h1>
+
+    <div id="lista"></div>
+
+    <div class="adictran">
+      <button onclick="abrirFormulario()">Adicionar Transação</button>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="newtransaction" id="formtransacao">
+        <h3>Nova Transação</h3>
+        <input type="text" id="descricao" placeholder="Descrição" autocomplete="off">
+
+        <input type="number" id="valor" placeholder="Valor">
+        <button onclick="adicionarTransacao()">Salvar</button>
+      </div>
+    </div>
+  </main>
+  <!-- carregar por ultimo -->
+  <script type="module" src="../script/transacao.js"></script>
+</body>
+
+</html>
