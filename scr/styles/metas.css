@@ -29,7 +29,14 @@ body{
   flex-direction:column;
   gap:10px;
 }
-
+.perfil {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  width: 180px;
+}
 .sidebar a{
   text-decoration:none;
   color:white;
@@ -43,31 +50,24 @@ body{
   padding:30px;
 }
 
-.settings-box{
+.goal-card{
   background:#1e293b;
   padding:20px;
   border-radius:16px;
   margin-top:20px;
-
-  display:flex;
-  flex-direction:column;
-  gap:15px;
 }
 
-.settings-box input,
-.settings-box select{
+.progress{
   width:100%;
-  padding:10px;
-  margin-top:5px;
-  border:none;
-  border-radius:10px;
+  height:20px;
+  background:#334155;
+  border-radius:20px;
+  margin:15px 0;
 }
 
-.settings-box button{
+.bar{
+  width:50%;
+  height:100%;
   background:#38bdf8;
-  border:none;
-  padding:12px;
-  border-radius:10px;
-  color:white;
-  cursor:pointer;
+  border-radius:20px;
 }
